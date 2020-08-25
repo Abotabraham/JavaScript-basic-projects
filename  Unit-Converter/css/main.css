@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  background-color: #52616b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  background-color: #393232;
+}
+
+li {
+  list-style: none;
+}
+
+/* // navbar styling */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  height: 40px;
+  text-decoration: none;
+  padding: 15px;
+  box-sizing: content-box;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  transition: 0s;
+  cursor: pointer;
+}
+
+.links a {
+  color: #f5f5f5;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: 0s;
+}
+
+.links a:hover {
+  color: #000;
+  transition-duration: 1s;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.show-links {
+  height: 10rem;
+}
+
+.social-icons {
+  color: #084177;
+  display: none;
+}
+
+.fab {
+  color: #084177;
+}
+
+.fab:hover {
+  color: #f5f5f5;
+}
+
+.nav-toggle:hover {
+  font-size: 1.5rem;
+  transform: rotate(90deg);
+  color: blue;
+  transition-duration: 1s
+}
+
+.fab {
+  color: #084177;
+}
+
+/* media query sytling  */
+@media screen and (max-width: 930px) {
+
+  /* .links {
+    visibility: hidden;
+  } */
+  .social-icons {
+    visibility: hidden;
+  }
+
+  .social-icons a {
+    visibility: hidden;
+  }
+
+  .nav-toggle {
+    display: flex;
+    font-size: 1.5rem;
+    transition: 0s;
+    cursor: pointer;
+  }
+
+  .logo {
+    margin-left: 24px;
+  }
+  .heading {
+    margin: 45px;
+    width: 100%;
+  }
+
+  .heading p {
+    width: 54%;
+    line-height: 1.5;
+  }
+
+}
+
+@media screen and (min-width: 930px) {
+    .heading {
+      width: 70%;
+
+    }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links {
+    height: auto;
+    display: flex;
+    transition: 0s;
+  }
+
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+    text-align: left;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+
+  .social-icons a {
+    margin: 0 0.5rem;
+  }
+
+  .fab {
+    color: #084177;
+  }
+}
+
+/* the rest of the body of the document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #dddddd;
+}
+
+.container {
+  background-image: image();
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+.heading {
+  text-align: center;
+  margin: 0 0 15px 0;
+  background: #00848c;
+  color: #fff;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  margin: 45px auto 0;
+  /* width: 70%; */
+}
+
+.heading h1 {
+  font-size: 35px;
+  margin: 15px 0;
+}
+
+.heading p {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.unit-inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  width: 90%;
+  margin: 0 auto 40px;
+}
+
+label {
+  font-size: 22px;
+  font-family: 'Montserrat-Black', sans-serif;
+  margin: 0 auto;
+  width: 215px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 900;
+}
+/* temperature conversion  */
+#celsius, #frahrenheit, #kelvin {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px 20px;
+  border: none;
+  font-family: 'Montserrat-Black', sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+  width: 430px;
+  box-shadow: 0 1px 5px #979797;
+}
+
+#celsius {
+  background: #595238;
+}
+
+#frahrenheit {
+  background: #35d073;
+}
+
+#kelvin {
+  background: #ff7a2f;
+}
+
+/* Length conversion - class css */
+
+.length {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px 20px;
+  border: none;
+  font-family: 'Montserrat-Black', sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+  width: 430px;
+  box-shadow: 0 1px 5px #979797;
+  margin-bottom: 20px;
+}
+/* id css */
+#kilometer {
+  background: #595238;
+}
+#mile  {
+  background:#35d073;
+}
+
+#yard  {
+  background:#ff7a2f;
+}
+
+#foot {
+  background:#fff;
+}
+
+#inch {
+  background:#07689f;
+}
+
+
+/* Mass conversion - css */
+  #kilogram {
+  background: #595238;
+}
+  #pound {
+  background:#35d073;
+}
+
+  #ounce {
+  background:#ff7a2f;
+}
+#gram {
+  background:#07689f;
+}

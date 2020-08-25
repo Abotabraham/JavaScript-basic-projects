@@ -1,0 +1,157 @@
+body {
+
+  margin: 0;
+  text-align: center;
+
+
+}
+nav {
+  background-color: #52616b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  background-color: #393232;
+
+}
+li {
+  list-style: none;
+}
+
+/* // navbar styling */
+
+.nav-header {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+}
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  height: 40px;
+  text-decoration: none;
+  padding: 15px;
+   box-sizing:content-box;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  transition: 0s;
+  cursor: pointer;
+}
+.links a {
+  color: #f5f5f5;
+  display: block;
+  font-size: 1.3rem;
+  font-weight:normal;
+  letter-spacing: 1px;
+  text-align: left;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: 0s;
+}
+
+.links a:hover {
+  color: #000;
+  transition-duration: 1s;
+
+}
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.show-links {
+  height: 10rem;
+}
+.social-icons {
+  color: #084177;
+  display: none;
+}
+.fab {
+  color: #084177;
+}
+.fab:hover{
+  color: #f5f5f5;
+}
+.nav-toggle:hover {
+  font-size: 1.5rem;
+  transform: rotate(90deg);
+  color: blue;
+  transition-duration: 1s
+}
+.fab {
+  color: #084177;
+}
+
+
+/* the rest of the body of the document */
+
+@media screen and (max-width: 930px) {
+  /* .links {
+    visibility: hidden;
+  } */
+  .social-icons {
+    visibility: hidden;
+  }
+  .social-icons a {
+    visibility: hidden;
+  }
+
+  .nav-toggle {
+    display: flex;
+    font-size: 1.5rem;
+    transition: 0s;
+    cursor: pointer;
+  }
+  .logo{
+    margin-left: 24px;
+  }
+
+  .heading p {
+    width: 54%;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .nav-center {
+     max-width: 1170px;
+     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+    transition: 0s;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+    text-align: left;
+  }
+  .social-icons {
+    display: flex;
+
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+
+  }
+  .fab {
+    color: #084177;
+  }
+
+
+
+}

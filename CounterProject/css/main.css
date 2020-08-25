@@ -1,0 +1,33 @@
+body {
+  font-family: 'Staatliches', cursive;
+  background-color: #f0f5f9;
+}
+h1 {
+  font-family: 'Staatliches', cursive;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.container {
+  text-align: center;
+  margin: 200px auto 100px;
+  width: 50%;
+}
+.value {
+  font-family: 'Francois One', sans-serif;
+ font-size: 85px;
+
+}
+.btn {
+  margin: 40px 18px;
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 8px 15px;
+}
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.value2 {
+  color : red;
+}

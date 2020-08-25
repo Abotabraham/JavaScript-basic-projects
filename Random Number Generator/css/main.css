@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: 'Monserrat', sans-serif;
+  background: #557571;
+
+}
+
+h1 {
+  font-size: 40px;
+  background: #0f4c75;
+  padding: 35px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 27px;
+  font-family: 'Monserrat', sans-serif;
+}
+
+.random-num {
+  margin: 15px auto;
+}
+.randombtn {
+  margin: 15px auto;
+  font-size: 20px;
+  padding: 15px 12px;
+  font-family: 'Monserrat', sans-serif;
+}
+input {
+  margin: 15px;
+  padding: 25px;
+  font-size: 20px;
+  background: #fff;
+  border: 2px solid cornflowerblue;
+  text-align: center;
+}
+label {
+
+  font-size: 25px;
+}
